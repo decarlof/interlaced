@@ -45,7 +45,7 @@ radii = r_outer - loop_indices * r_step  # all points in the same loop share rad
 # ------------------------
 fig = plt.figure(figsize=(7,7))
 ax = fig.add_subplot(111, polar=True)
-ax.set_title(f"Interlaced Acquisition (K={K})\nEach loop on its own circle", va='bottom', fontsize=13)
+ax.set_title(f"Interlaced Acquisition (N={N_theta} - K={K})\nEach loop on its own circle", va='bottom', fontsize=13)
 
 # Connect points in true acquisition order
 ax.plot(angles, radii, '-o', lw=1.2, ms=5, alpha=0.8, color='tab:blue')
