@@ -1,7 +1,7 @@
-# this will replace the original program_PSO at https://github.com/tomography/tomoscan/blob/08d77831c9a95e90f10cec781dc644159bd42bf0/tomoscan/tomoscan_pso.py#L199C9-L199C20
-# for system using softglue
+# this will be used instead of the original program_PSO (see https://github.com/tomography/tomoscan/blob/08d77831c9a95e90f10cec781dc644159bd42bf0/tomoscan/tomoscan_pso.py#L199C9-L199C20)
+# when using Zynq to program the encoder pulses (see https://docs2bm.readthedocs.io/en/latest/source/ops/item_060.html)
 
-def program_PSO(self):
+def program_PSO_Zynq(self):
     '''Performs programming of PSO output on the Aerotech driver.
     '''
     self.epics_pvs['ScanStatus'].put('Programming PSO')
