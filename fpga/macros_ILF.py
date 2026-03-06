@@ -5,6 +5,15 @@
 # examples of recorded macros, and recorded macros that have been edited
 # to use arguments
 
+
+# usage:
+# select a list of pulses from the encoder pulses to be used as camera trigger
+# [0,2,4,6] = pulse 0, 2, 4, 6 (pulse counter/order)
+# 
+# import macros_ILF as m
+# m.write_PSO_array([0,2,4,6])
+
+
 import time
 import epics
 import numpy as np
